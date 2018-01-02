@@ -5,4 +5,6 @@
 A sample containing a KeyboardHeightProvider that can calculate the height of a floating soft input keyboard.
 The provider is using a hidden PopupWindow to calculate the height of the keyboard.
 
+And the soft mode adjustNothing can successfully applied it.
+
 
