@@ -2,29 +2,25 @@ apply plugin: 'com.android.application'
 
 android {
 
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 'android-O'
+    buildToolsVersion "26.0.1"
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 23
+        targetSdkVersion 26
         versionName = "1.0.0"
         versionCode = 1000
         applicationId = "com.siebeprojects.samples.keyboardheight"
     }
 
-    lintOptions {
-      abortOnError false
-    }
-
-    signingConfigs {
-        release
-    }
-
     buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
     }
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:appcompat-v7:26.1.0'
 }
